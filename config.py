@@ -5,15 +5,15 @@ class Config(object):
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5298266813:AAHmR149F3kZ_Mr3fNiGeS-4zO7zOkEQ0Ik")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 8705333))
-    API_HASH = os.environ.get("API_HASH", 549bb8227cc07c5fc3fa5f059d59a050)
+    API_HASH = int(os.environ.get("API_HASH", 549bb8227cc07c5fc3fa5f059d59a050))
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
     # log channel
-    #LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "")
+    #LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001529620658")
     # Get these values from my.telegram.org
-    CHAT_ID = os.environ.get("CHAT_ID", "")
+    CHAT_ID = os.environ.get("CHAT_ID", "-1001529620658")")
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1234465167").split())
     # Banned Unwanted Members..
     BANNED_USERS = []
     # the download location, where the HTTP Server runs
@@ -38,5 +38,5 @@ class Config(object):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # Database url
-    DB_URI = os.environ.get("DATABASE_URL", "")
+    DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Thanimaipro:thanimaipro@thanimaipro.tjasm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
     
