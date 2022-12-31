@@ -9,9 +9,9 @@ class Config(object):
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
     # log channel
-    #LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001529620658")
+    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001529620658")
     # Get these values from my.telegram.org
-    CHAT_ID = os.environ.get("CHAT_ID", "-1001529620658")")
+    CHAT_ID = os.environ.get("CHAT_ID", "-1001529620658")
     # Array to store users who are authorized to use the bot
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1234465167").split())
     # Banned Unwanted Members..
