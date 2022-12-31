@@ -5,7 +5,7 @@ class Config(object):
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5298266813:AAHmR149F3kZ_Mr3fNiGeS-4zO7zOkEQ0Ik")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 8705333))
-    API_HASH = int(os.environ.get("API_HASH", 549bb8227cc07c5fc3fa5f059d59a050))
+    API_HASH = os.environ.get("API_HASH" )
     # Update channel for Force Subscribe
     UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
     # log channel
